@@ -1,0 +1,126 @@
+/* Produkt klassisk "kasse" */
+.produkt_liste {
+  border: solid 0.1px rgba(190, 190, 190, 0.438);
+  border-radius: 5px;
+  padding: 20px;
+  width: 300px;
+}
+
+.produkt_liste img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.produkt_liste h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.produkt_liste p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Produkt Udsolgt  "kasse" */
+.udsolgt_liste {
+  border: solid 0.1px rgba(190, 190, 190, 0.438);
+  border-radius: 5px;
+  padding: 20px;
+  width: 300px;
+}
+.udsolgt_liste img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  filter: blur(3px); /* giver sløret effeket */
+}
+
+.udsolgt_liste h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.udsolgt_liste p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Udsolgt tekst */
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+.udsolgt_label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(135, 135, 135, 0.735);
+  color: rgb(36, 36, 36);
+  padding: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+/* Produkt Rabat "kasse" */
+.rabat_liste {
+  border: solid 0.1px rgba(190, 190, 190, 0.438);
+  border-radius: 5px;
+  padding: 20px;
+  width: 300px;
+}
+.rabat_liste img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.rabat_liste h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.rabat_liste p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Rabat tekst */
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+.rabat-label {
+  position: absolute;
+  top: 5%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(249, 179, 2, 0.849);
+  color: rgb(36, 36, 36);
+  padding: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Kategoriliste */
+.kategori_liste a {
+  text-decoration: none;
+  display: flex;
+  padding: 1.5em;
+  align-items: center;
+  margin: 2%;
+  color: rgb(63, 63, 63);
+  background-color: rgb(188, 188, 188);
+  border-radius: 10px;
+  line-height: 30px;
+}
+
+/* Produkt side */
+.produkt button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  cursor: pointer;
+}

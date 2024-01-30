@@ -1,0 +1,29 @@
+body {
+  background-color: #fffffe;
+}
+
+main {
+  margin: 4%;
+}
+
+/* responsivt */
+@media screen and (min-width: 820px) {
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: 4%;
+  }
+
+  .kategori_liste {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr /* repeat(3, 1fr) */;
+    gap: 2rem;
+  }
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    padding: 2%;
+  }
+}
