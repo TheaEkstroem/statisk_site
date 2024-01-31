@@ -1,7 +1,26 @@
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #242424;
+}
+
+h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  color: #242424;
+}
+
+a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 /* Produkt klassisk "kasse" */
 .produkt_liste {
-  border: solid 0.1px rgba(190, 190, 190, 0.438);
-  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
   padding: 20px;
   width: 300px;
 }
@@ -9,33 +28,37 @@
 .produkt_liste img {
   width: 100%;
   height: auto;
-  margin-bottom: 10px;
+  margin-bottom: 2px;
 }
 
 .produkt_liste h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
+  font-size: 15px;
+  margin-bottom: 0px;
 }
 
-.produkt_liste p {
+.produkt_beskrivelse {
   font-size: 14px;
   color: #666;
 }
-
+/* .produkt_liste p {
+  font-size: 14px;
+  color: #666;
+}
+ */
 /* Produkt Udsolgt  "kasse" */
-.udsolgt_liste {
+/* .udsolgt_liste {
   border: solid 0.1px rgba(190, 190, 190, 0.438);
   border-radius: 5px;
   padding: 20px;
   width: 300px;
-}
+} */
 .udsolgt_liste img {
   width: 100%;
   height: auto;
   margin-bottom: 10px;
   filter: blur(3px); /* giver sløret effeket */
 }
-
+/* 
 .udsolgt_liste h3 {
   font-size: 18px;
   margin-bottom: 10px;
@@ -44,7 +67,7 @@
 .udsolgt_liste p {
   font-size: 14px;
   color: #666;
-}
+} */
 
 /* Udsolgt tekst */
 .image-container {
@@ -52,38 +75,41 @@
   display: inline-block;
 }
 .udsolgt_label {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(135, 135, 135, 0.735);
+  background-color: rgba(135, 135, 135, 0.357);
   color: rgb(36, 36, 36);
+
   padding: 10px;
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 20px;
+  /*   font-weight: bold;
+ */
 }
 /* Produkt Rabat "kasse" */
-.rabat_liste {
+/* .rabat_liste {
   border: solid 0.1px rgba(190, 190, 190, 0.438);
   border-radius: 5px;
   padding: 20px;
   width: 300px;
-}
-.rabat_liste img {
+} */
+/* .rabat_liste img {
   width: 100%;
   height: auto;
   margin-bottom: 10px;
 }
-
-.rabat_liste h3 {
+ */
+/* .rabat_liste h3 {
   font-size: 18px;
   margin-bottom: 10px;
 }
 
 .rabat_liste p {
   font-size: 14px;
-  color: #666;
-}
+} */
 
 /* Rabat tekst */
 .image-container {
@@ -91,15 +117,32 @@
   display: inline-block;
 }
 .rabat-label {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   position: absolute;
   top: 5%;
   left: 90%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(249, 179, 2, 0.849);
-  color: rgb(36, 36, 36);
-  padding: 10px;
-  font-size: 24px;
-  font-weight: bold;
+  transform: translate(-2%, -90%);
+  /*   background-color: rgba(95, 95, 95, 0.346);
+ */
+  color: rgba(248, 38, 38, 0.849);
+  /*   color: rgb(36, 36, 36);
+ */
+  padding: 4px;
+  font-size: 18px;
+}
+
+/* pris forskel */
+.sale_price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.oldprice {
+  color: #666;
+  text-decoration: line-through;
+}
+.newprice {
+  color: red;
 }
 
 /* Kategoriliste */
@@ -109,10 +152,11 @@
   padding: 1.5em;
   align-items: center;
   margin: 2%;
-  color: rgb(63, 63, 63);
-  background-color: rgb(188, 188, 188);
+  color: rgb(255, 255, 255);
+  background-color: #517a8b;
   border-radius: 10px;
   line-height: 30px;
+  font-weight: bold;
 }
 
 /* Produkt side */
@@ -123,4 +167,35 @@
   border-radius: 3px;
   padding: 10px 20px;
   cursor: pointer;
+}
+
+/* logo */
+.logo img {
+  display: block;
+  margin: 1% auto 1% auto;
+  max-width: 20%;
+  max-height: 20%;
+}
+
+/* nav */
+nav {
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 0 30px; /* Add space between menu items */
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding: 10px; /* Add spacing around the links */
 }
