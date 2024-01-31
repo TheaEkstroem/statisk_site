@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/layout.css" />
-    <title>Produkt</title>
+    <title>Product</title>
   </head>
   <body>
     <header>
@@ -14,20 +14,31 @@
       </div>
       <nav>
         <ul>
-          <li><a href="kategori.html">Kategori</a></li>
-          <li><a href="produktliste.html">Produktliste</a></li>
-          <li><a href="produkt.html">Produkt</a></li>
+          <li><a href="kategori.html">Category</a></li>
+          <li><a href="produktliste.html">Productlist</a></li>
+          <li><a href="produkt.html">Product</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <h2>Produkt</h2>
+      <ol class="breadcrumbs">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="kategori.html">Category</a></li>
+        <li><a href="produktliste.html">Puma</a></li>
+        <li><a href="produkt.html">Puma Cap</a></li>
+      </ol>
       <section class="grid_1-1">
         <img class="product_img" src="img/1535.webp" alt="Puma Kasket" />
         <div class="product">
-          <h3>Puma Cap</h3>
-          <p>product description</p>
+          <p class="product_brand">Puma</p>
+          <p class="product_name">Puma Cap</p>
           <p>Price</p>
+
+          <label for="size">Size: </label>
+          <select id="size" name="size">
+            <option value="onesize">One size</option>
+          </select>
+
           <button>Add to basket</button>
 
           <div class="details_product">

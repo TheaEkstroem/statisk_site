@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/layout.css" />
-    <title>Produkt Liste</title>
+    <title>ProductList</title>
   </head>
   <body>
     <header>
@@ -14,70 +14,76 @@
       </div>
       <nav>
         <ul>
-          <li><a href="kategori.html">Kategori</a></li>
-          <li><a href="produktliste.html">Produktliste</a></li>
-          <li><a href="produkt.html">Produkt</a></li>
+          <li><a href="kategori.html">Category</a></li>
+          <li><a href="produktliste.html">Productlist</a></li>
+          <li><a href="produkt.html">Product</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <h2>Produkter</h2>
+      <h2>Puma</h2>
 
-      <section class="grid_1-1-1">
-        <div class="product_card">
-          <img src="img/1533.webp" alt="Product Image" />
-          <h3>Puma T-shirt</h3>
-          <p class="product_description">product description</p>
-          <p>Price</p>
+      <section class="productlist">
+        <a href="produkt.html">
+          <div class="product_card">
+            <img src="img/1533.webp" alt="Product Image" />
+            <p class="product_brand">Puma</p>
+            <h3>Puma T-shirt</h3>
+            <p>Price</p>
+          </div>
+        </a>
 
-          <a class="product_link" href="produkt.html">Read More</a>
-        </div>
+        <a href="produkt.html">
+          <div class="product_card">
+            <img src="img/1535.webp" alt="Product Image" />
+            <p class="product_brand">Puma</p>
 
-        <div class="product_card">
-          <img src="img/1535.webp" alt="Product Image" />
-          <h3>Puma Cap</h3>
-          <p class="product_description">product description</p>
-          <p>Price</p>
+            <h3>Puma Cap</h3>
+            <p>Price</p>
+          </div>
+        </a>
 
-          <a class="product_link" href="produkt.html"> Read More</a>
-        </div>
+        <a href="produkt.html">
+          <div class="product_card">
+            <img src="img/1573.webp" alt="Product Image" />
+            <p class="product_brand">Puma</p>
 
-        <div class="product_card">
-          <img src="img/1573.webp" alt="Product Image" />
-          <h3>Capri Pants</h3>
-          <p class="product_description">product description</p>
-          <p>Price</p>
-
-          <a class="product_link" href="produkt.html">Read More</a>
-        </div>
+            <h3>Capri Pants</h3>
+            <p>Price</p>
+          </div>
+        </a>
 
         <!-- Udsolgte version -->
-        <div class="product_card udsolgt_liste">
-          <div class="image-container">
-            <img src="img/1573.webp" alt="Product Image" />
-            <div class="udsolgt_label">udsolgt</div>
-          </div>
-          <h3>Capri Pants</h3>
-          <p class="product_description">product description</p>
-          <p>Price</p>
+        <a href="produkt.html">
+          <div class="product_card udsolgt_liste">
+            <div class="image-container">
+              <img src="img/1573.webp" alt="Product Image" />
+              <div class="udsolgt_label">udsolgt</div>
+            </div>
+            <p class="product_brand">Puma</p>
 
-          <a class="product_link" href="produkt.html">Read More</a>
-        </div>
+            <h3>Capri Pants</h3>
+            <p>Price</p>
+          </div>
+        </a>
 
         <!-- rabat -->
-        <div class="product_card rabat_liste">
-          <div class="image-container">
-            <img src="img/1573.webp" alt="Product Image" />
-            <div class="rabat-label">Deal</div>
+        <a href="produkt.html">
+          <div class="product_card rabat_liste">
+            <div class="image-container">
+              <img src="img/1573.webp" alt="Product Image" />
+              <div class="rabat-label">Deal</div>
+            </div>
+            <p class="product_brand">Puma</p>
+
+            <h3>Capri Pants</h3>
+            <div class="sale_price">
+              <p class="newprice">New Price</p>
+
+              <p class="oldprice">Old Price</p>
+            </div>
           </div>
-          <h3>Capri Pants</h3>
-          <p class="product_description">product description</p>
-          <div class="sale_price">
-            <p class="oldprice">Old Price</p>
-            <p class="newprice">New Price</p>
-          </div>
-          <a class="product_link" href="produkt.html">Read More</a>
-        </div>
+        </a>
       </section>
     </main>
 
