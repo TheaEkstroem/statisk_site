@@ -19,7 +19,7 @@ image {
     margin: 4%;
   }
 
-  .kategori_liste {
+  .category {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr /* repeat(3, 1fr) */;
     gap: 2rem;
